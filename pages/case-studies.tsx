@@ -2,7 +2,7 @@ import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Code, Database, LineChart } from 'lucide-react';
-import { client, urlFor } from '../lib/sanity';
+import { client, urlFor, mockCaseStudies } from '../lib/sanity';
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 
 // Define the Case Study type
@@ -24,12 +24,31 @@ const fallbackImageUrl = '/images/placeholder.jpg';
 
 // Fetch data with ISR
 export const getStaticProps: GetStaticProps<CaseStudiesProps> = async () => {
-  const query = `*[_type == "caseStudy"]{title, description, image, category, link}`;
-  const caseStudies: CaseStudy[] = await client.fetch(query);
-  return {
-    props: { caseStudies },
-    revalidate: 10, // Regenerate every 10 seconds if new data
-  };
+  try {
+    const query = `*[_type == "caseStudy"]{title, description, image, category, link}`;
+    const caseStudies: CaseStudy[] = await client.fetch(query);
+    
+    // If we got data from Sanity, use it
+    if (caseStudies && caseStudies.length > 0) {
+      return {
+        props: { caseStudies },
+        revalidate: 10, // Regenerate every 10 seconds if new data
+      };
+    }
+    
+    // Otherwise fall back to mock data
+    return {
+      props: { caseStudies: mockCaseStudies },
+      revalidate: 10,
+    };
+  } catch (error) {
+    console.error("Error fetching case studies:", error);
+    // Return mock data on error
+    return {
+      props: { caseStudies: mockCaseStudies },
+      revalidate: 10,
+    };
+  }
 };
 
 export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
