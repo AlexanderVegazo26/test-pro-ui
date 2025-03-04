@@ -9,7 +9,7 @@ import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 interface CaseStudy {
   title: string;
   description: string;
-  image: SanityImageSource; // Sanity image asset
+  image?: SanityImageSource; // Sanity image asset
   category: string;
   link?: string;
 }
@@ -18,6 +18,9 @@ interface CaseStudy {
 interface CaseStudiesProps {
   caseStudies: CaseStudy[];
 }
+
+// Add a fallback image URL for when image is undefined
+const fallbackImageUrl = '/images/placeholder.jpg';
 
 // Fetch data with ISR
 export const getStaticProps: GetStaticProps<CaseStudiesProps> = async () => {
@@ -33,7 +36,8 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
   const featuredCaseStudy = caseStudies[0]; // First as featured
   const otherCaseStudies = caseStudies.slice(1);
 
-  return (
+  if (!caseStudies || caseStudies.length === 0)
+  {return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
@@ -126,7 +130,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
             <div className="overflow-hidden rounded-lg bg-gray-100">
               <Image
-                src={urlFor(featuredCaseStudy.image).url()}
+                src={featuredCaseStudy.image ? urlFor(featuredCaseStudy.image).url() : fallbackImageUrl}
                 alt={featuredCaseStudy.title}
                 width={800}
                 height={500}
@@ -162,7 +166,7 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
               <div key={study.title} className="group relative overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md">
                 <div className="aspect-video overflow-hidden bg-gray-100">
                   <Image
-                    src={urlFor(study.image).url()}
+                    src={study.image ? urlFor(study.image).url() : fallbackImageUrl}
                     alt={study.title}
                     width={500}
                     height={300}
@@ -194,5 +198,5 @@ export default function CaseStudies({ caseStudies }: CaseStudiesProps) {
       <section id="contact" className="bg-blue-600 py-16 md:py-24">...</section>
       <footer className="border-t bg-white py-12">...</footer>
     </div>
-  );
+  );}
 }
