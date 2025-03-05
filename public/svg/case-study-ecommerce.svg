@@ -1,0 +1,40 @@
+<svg width="500" height="300" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" rx="8" fill="#F8FAFC"/>
+  
+  <!-- Background Elements -->
+  <rect x="0" y="0" width="500" height="300" rx="8" fill="#EFF6FF"/>
+  <path d="M0 150 Q125 100 250 150 T500 150 L500 300 L0 300 Z" fill="#BFDBFE" fill-opacity="0.3"/>
+  
+  <!-- Shopping Cart -->
+  <circle cx="250" cy="120" r="70" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <path d="M210 120 L230 120 L240 90 L290 90 L300 120 L320 120" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="240" cy="140" r="10" fill="#3B82F6"/>
+  <circle cx="290" cy="140" r="10" fill="#3B82F6"/>
+  
+  <!-- Mobile Device -->
+  <rect x="350" y="80" width="80" height="140" rx="10" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="350" y="100" width="80" height="100" fill="#BFDBFE" fill-opacity="0.3"/>
+  <circle cx="390" cy="210" r="8" fill="#E2E8F0"/>
+  
+  <!-- Product Boxes -->
+  <rect x="70" y="80" width="40" height="40" rx="4" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="70" y="130" width="40" height="40" rx="4" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="120" y="80" width="40" height="90" rx="4" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  
+  <!-- Graph -->
+  <rect x="100" y="200" width="300" height="60" rx="4" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="120" y1="250" x2="380" y2="250" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="120" y1="210" x2="120" y2="250" stroke="#94A3B8" stroke-width="1"/>
+  <polyline points="120,240 150,230 180,235 210,220 240,210 270,215 300,205 330,210 360,200" 
+          stroke="#3B82F6" stroke-width="2" fill="none"/>
+  
+  <!-- Check Marks -->
+  <circle cx="70" cy="220" r="15" fill="#22C55E"/>
+  <path d="M63 220L68 225L77 216" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="430" cy="220" r="15" fill="#22C55E"/>
+  <path d="M423 220L428 225L437 216" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Title -->
+  <text x="250" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#1E293B" text-anchor="middle">E-Commerce Success Story</text>
+</svg> 

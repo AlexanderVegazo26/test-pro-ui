@@ -1,0 +1,54 @@
+<svg width="500" height="300" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" rx="8" fill="#F8FAFC"/>
+  
+  <!-- Background Elements -->
+  <rect x="0" y="0" width="500" height="300" rx="8" fill="#EFF6FF"/>
+  <path d="M0 150 Q125 100 250 150 T500 150 L500 300 L0 300 Z" fill="#BFDBFE" fill-opacity="0.3"/>
+  
+  <!-- Medical Cross -->
+  <rect x="50" y="100" width="100" height="100" rx="10" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="85" y="110" width="30" height="80" rx="4" fill="#3B82F6"/>
+  <rect x="60" y="135" width="80" height="30" rx="4" fill="#3B82F6"/>
+  
+  <!-- Heart Rate Monitor -->
+  <rect x="180" y="80" width="240" height="100" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="200" y1="130" x2="400" y2="130" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Heart Rate Line -->
+  <polyline points="200,130 220,130 230,130 240,90 250,170 260,130 280,130 300,130 310,110 320,150 330,130 350,130 370,130 380,90 390,170 400,130" 
+          stroke="#EF4444" stroke-width="2" fill="none"/>
+  
+  <!-- Medical Data -->
+  <rect x="180" y="200" width="240" height="60" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Data Bars -->
+  <rect x="200" y="210" width="20" height="40" rx="2" fill="#BFDBFE"/>
+  <rect x="230" y="220" width="20" height="30" rx="2" fill="#BFDBFE"/>
+  <rect x="260" y="215" width="20" height="35" rx="2" fill="#BFDBFE"/>
+  <rect x="290" y="225" width="20" height="25" rx="2" fill="#BFDBFE"/>
+  <rect x="320" y="210" width="20" height="40" rx="2" fill="#BFDBFE"/>
+  <rect x="350" y="205" width="20" height="45" rx="2" fill="#BFDBFE"/>
+  <rect x="380" y="215" width="20" height="35" rx="2" fill="#BFDBFE"/>
+  
+  <!-- Medical Icons -->
+  <!-- Stethoscope -->
+  <circle cx="450" cy="100" r="15" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <path d="M450 115 L450 140 L430 160" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+  <path d="M450 140 L470 160" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="430" cy="165" r="5" fill="#3B82F6"/>
+  <circle cx="470" cy="165" r="5" fill="#3B82F6"/>
+  
+  <!-- Pill -->
+  <rect x="430" y="200" width="40" height="20" rx="10" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <line x1="450" y1="200" x2="450" y2="220" stroke="#3B82F6" stroke-width="2"/>
+  
+  <!-- Performance Indicators -->
+  <circle cx="100" cy="230" r="15" fill="#22C55E"/>
+  <path d="M93 230L98 235L107 226" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <circle cx="140" cy="230" r="15" fill="#22C55E"/>
+  <path d="M133 230L138 235L147 226" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Title -->
+  <text x="250" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#1E293B" text-anchor="middle">Healthcare Performance Case Study</text>
+</svg> 

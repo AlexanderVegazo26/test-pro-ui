@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="8" fill="#EFF6FF" fill-opacity="0.5"/>
+  
+  <!-- Checklist Background -->
+  <rect x="40" y="30" width="120" height="140" rx="6" fill="white" stroke="#BFDBFE" stroke-width="2"/>
+  
+  <!-- Checklist Items -->
+  <circle cx="60" cy="60" r="10" fill="#3B82F6"/>
+  <path d="M55 60L58 63L65 56" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="80" y="55" width="60" height="10" rx="2" fill="#E2E8F0"/>
+  
+  <circle cx="60" cy="90" r="10" fill="#3B82F6"/>
+  <path d="M55 90L58 93L65 86" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="80" y="85" width="60" height="10" rx="2" fill="#E2E8F0"/>
+  
+  <circle cx="60" cy="120" r="10" fill="#3B82F6"/>
+  <path d="M55 120L58 123L65 116" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="80" y="115" width="60" height="10" rx="2" fill="#E2E8F0"/>
+  
+  <circle cx="60" cy="150" r="10" fill="#3B82F6"/>
+  <path d="M55 150L58 153L65 146" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="80" y="145" width="60" height="10" rx="2" fill="#E2E8F0"/>
+  
+  <!-- Magnifying Glass -->
+  <circle cx="140" cy="60" r="25" fill="none" stroke="#3B82F6" stroke-width="3"/>
+  <line x1="158" y1="78" x2="170" y2="90" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Code Brackets -->
+  <path d="M30 100L20 120L30 140" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170 100L180 120L170 140" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
